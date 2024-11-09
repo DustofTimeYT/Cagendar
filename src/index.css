@@ -45,7 +45,7 @@ h1 {
   .search-bar {
     max-height: 15vw;
     max-width: 800px;
-    min-width: 200px;
+    min-width: 100px;
   }
 }
 

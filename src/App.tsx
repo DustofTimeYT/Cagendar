@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './App.css'
+import PasswordInput from './RegWindows'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -10,6 +11,9 @@ function App() {
         <div className="account-image"></div>
       </div>
       <h1>Vite + React</h1>
+      <div>
+        <PasswordInput />
+      </div>
       <div className="card">
         <button onClick={() => setCount((count) => count + 4)}>
           count is {count}

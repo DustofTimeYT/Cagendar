@@ -1,0 +1,25 @@
+.nav-bar {
+    width: 100%;
+    max-width: 1100px;
+    height: 57px;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.12);
+    align-content: center;
+}
+
+@media screen and (max-width: 1023px) {
+    .nav-bar {
+        max-height: 15vw;
+        max-width: 800px;
+        min-width: 100px;
+    }
+}
+
+.account-image {
+    margin-left: auto;
+    margin-right: 6px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.15);
+}

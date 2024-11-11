@@ -64,7 +64,8 @@ useEffect(()=>{
 },[])
 
   return (
-    <div>
+      <div>
+          <h1>Users</h1>
         {
          users.map((user: UserInfo) => {
             return (

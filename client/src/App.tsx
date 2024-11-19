@@ -1,12 +1,9 @@
 import "./App.css";
-import { Router, Route, Routes, Link } from 'react-router-dom';
-import Home from './components/Home';
-import NavBar from "./NavBar"
-import Users from "./components/Users";
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
+import Home from './pages/Home';
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Login from "./pages/Login";
+import { ThemeProvider } from '@mui/material/styles';
+import Theme from "./Themes"
 
 const router = createBrowserRouter([
   {
@@ -14,14 +11,16 @@ const router = createBrowserRouter([
     element: <Home/>,
   },
   {
-    path: "/users",
-    element: <Users/>,
+    path: "/login",
+    element: <Login/>,
   },
 ]);
 
 function App() {
-  return(
-    <RouterProvider router={router}/>
+  return (
+    <ThemeProvider theme={Theme}>
+      <RouterProvider router={router} />
+    </ThemeProvider>
   )
 }
 
